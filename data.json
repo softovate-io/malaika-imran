@@ -1,0 +1,65 @@
+{
+    "siteName": "Malaika Imran.",
+    "siteGeneral": {
+        "theme": "light",
+        "author": "Malaika Imran",
+        "author_email": "Alinacollen@gmail.com",
+        "author_phone": "+89 6724 679876",
+        "author_address": "Aylesbury, England",
+        "yearsOfExperience": "02+ Years Working",
+        "earnedCertifications": "25+ Collaborations",
+        "companiesWorked": "800+ Creators Connected",
+        "description": "Experienced Change and Release Specialist skilled in CI/CD implementation, automation testing, and risk mitigation.",
+        "copyright": "Copyright ©2024 Malaika Imran. All right reserved",
+        "keywords": "Malaika Imran Portfolio, Change Management, Release Management, CI/CD, Agile Methodologies, Scrum Practices, Risk Mitigation, Go-Live, Automation Testing, Configuration Management, Selenium, Appium, TestNG, Java, Python, SQL, AWS, Microsoft Azure, Docker, Jenkins, Nagios, Splunk, GitHub, GitLab, Cucumber, JIRA, Confluence, Azure DevOps, Maven, Puppet, ERP Systems, SDLC, Cross-Functional Collaboration, Risk Assessment, Stakeholder Communication, Quality Assurance, ITIL v4, CSPO, DevOps Fundamentals, Advanced Computer Science, Computer Engineering"
+    },
+    "configKeys": {
+        "web3form_access_key": "6f37205c-8158-4418-b1c2-0cae6739c064"
+    },
+    "certificates": [
+        {
+            "date": "2024",
+            "title": "Certified Scrum Product Owner (CSPO)",
+            "from": "Scrum Alliance",
+            "image": "certificates/certificate-3.png",
+            "most_recent": true,
+            "view_url": "certificates/SejalJawale-ScrumAlliance_CSPO_Certificate.pdf"
+        },
+        {
+            "date": "2023",
+            "title": "ITIL® Foundation Certificate in IT Service Management",
+            "from": "ITIL® Foundation",
+            "image": "certificates/certificate-1.png",
+            "most_recent": false,
+            "view_url": "certificates/BA_CERT.pdf"
+        },
+        {
+            "date": "2021",
+            "title": "Business Analytics Specialization",
+            "from": "Coursera",
+            "image": "certificates/certificate-2.png",
+            "most_recent": false,
+            "view_url": "https://www.coursera.org/account/accomplishments/specialization/certificate/NJB5FKFHRZPP"
+        }
+    ],
+    "blogs": [
+        {
+            "date": "October 11, 2024",
+            "author": "Malaika Imran",
+            "tag": "Technology",
+            "post_title": "Mastering Change in Agile: 8 Game-Changing Strategies for the Modern Era 🚀",
+            "description": "In the fast-paced world of software development, change isn’t just expected—it’s essential 🌐. Agile environments thrive on flexibility, speed, and constant evolution. But here’s the kicker: without a solid strategy to manage those changes, your fast-moving innovations can spiral into chaos.",
+            "image": "blogs/blog-1.png",
+            "readMore_link": "https://www.linkedin.com/pulse/mastering-change-agile-8-game-changing-strategies-modern-sejal-jawale-4rhce/?trackingId=mFy9PSv9SbKiun4ll3DFww%3D%3Dhttps%3A%2F%2Fwww.linkedin.com%2Fpulse%2Fleveraging-devops-continuous-change-agile-frameworks-ultimate-jawale-oxvoe%2F%3FtrackingId"
+        },
+        {
+            "date": "November 23, 2024",
+            "author": "Malaika Imran",
+            "tag": "Change Management",
+            "post_title": "6 Types of Change Management: Navigating Origanizational Transformation",
+            "description": "Swipe through to explore six essential types of change management and learn how each approach helps organizations thrive during transitions. From cultural shifts to technological upgrades, discover strategies that create smoother journeys for teams and organizations alike.",
+            "image": "blogs/blog-2.png",
+            "readMore_link": "https://www.linkedin.com/posts/sejaljawale_6-types-of-change-management-activity-7260244706024919044-cB9e/?utm_source=share&utm_medium=member_desktop"
+        }
+    ]
+}

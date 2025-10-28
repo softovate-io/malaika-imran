@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="keywords" content="">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="icon" type="image/x-icon" sizes="48x48" href="assets/img/favicon.ico">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+
+        <!--=============== BOXICONS ===============-->
+        <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+         <link rel="stylesheet" href="assets/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--==================== TOASTR CSS ====================-->
+        <link rel="stylesheet" href="assets/css/toastr.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Malaika Imrans's Portfolio</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo siteName">Malaika Imran.</a>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link" data-tooltip="Home">
+                                <i class="bx bx-home-alt"></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link" data-tooltip="About">
+                                <i class="bx bx-user"></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link" data-tooltip="Education">
+                                <i class="bx bxs-graduation"></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link" data-tooltip="Qualification">
+                                <i class="bx bx-briefcase-alt-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link" data-tooltip="Contact">
+                                <i class="bx bx-message-square-detail"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Theme change button -->
+                <i class="bx bx-moon change-theme" id="theme-button"></i>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, I'm</span>
+                        <h1 class="home__name">Malaika Imran</h1>
+                        <h3 class="home__education area__expertise-type"><span></span></h3>
+                        <p class="home__description">Transforming Brand Strategies into Measurable Growth Brand Partnership, Influencer Management & Creative Direction. </p>
+
+                        <div class="home__buttons">
+                            <!-- <a download="" href="CV/SejalJawale_CV.pdf" class="button button--ghost">
+                                Download CV
+                            </a> -->
+                            <a href="#contact" class="button">
+                                Contact Me <i class="bx bx-message-square-detail"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__handle">
+                        <img src="assets/img/perfil-1.png" alt="Home image" class="home__img">
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/sejaljawale/" target="_blank" class="home__social-link">
+                            <i class="bx bxl-linkedin-square"></i>    
+                        </a>
+                        <a href="" target="_blank" class="home__social-link authorEmailLink">
+                            <i class="bx bxl-gmail"></i> 
+                        </a>
+                    </div>
+
+                    <a href="#about" class="home__scroll">
+                        <i class="bx bx-mouse home__scroll-icon"></i>
+                        <span class="home__scroll-name">Scroll Down</span> 
+                    </a>
+                </div>
+            </section>
+            
+            <!--=============== ABOUT ===============-->
+            <section class="about section" id="about">
+                <span class="section__subtitle">My introduction</span>
+                <h2 class="section__title">About Me</h2>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/about-1.png" alt="About me image" class="about__img">
+
+                    <div class="about__data">
+                        <div class="about__info">
+                            <div class="about__box">
+                                <i class="bx bx-award about__icon"></i> 
+                                <h3 class="about__title">Experience</h3>
+                                <span class="about__subtitle yearsWorkCounter"></span>
+                            </div>
+                            <div class="about__box">
+                                <i class="bx bx-building about__icon"></i> 
+                                <h3 class="about__title">Brands</h3>
+                                <span class="about__subtitle companiesCounter"></span>
+                            </div>
+                            <div class="about__box">
+                                <i class="bx bx-user about__icon"></i> 
+                                <h3 class="about__title">Influencer Network</h3>
+                                <span class="about__subtitle certificateCounter"></span>
+                            </div>
+                        </div>
+
+                        <p class="about__description">
+                            Hi! I’m Malaika Imran, Founder and Creative Director of Alvanta Talent — a human-centric Influencer Talent Marketing Studio driven entirely by my creative direction.
+                            I started Alvanta to help brands cut through the noise of the influencer economy and create
+                            collaborations that are authentic, transparent, and truly impactful.
+                            With over 2 years of comprehensive experience, I oversee & direct every stage of the
+                            process—from brand pitching and talent scouting to campaign strategy and execution—so my
+                            clients never have to worry about chasing influencers or juggling multiple partnerships.
+                            To date, I’ve delivered 25+ successful brand campaigns, connecting with 800+ creators across
+                            Pakistan, the US, UK, and UAE. Every project is executed with precision, creativity, and integrity,
+                            ensuring results that speak for themselves. 
+                            <br>
+                            If you’re looking for someone who can transform your brand vision into meaningful influencer campaigns without the hassle, let’s connect and make it happen.
+                        </p>
+
+                        <a href="https://www.linkedin.com/in/sejaljawale/" target="_blank" class="button button--flex">
+                          Linkedin <i class='bx bxl-linkedin-square button__icon' ></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== SKILLS ===============-->
+            <section class="skills section" id="skills" style="display: none !important;">
+                <span class="section__subtitle">Key areas of expertise</span>
+                <h2 class="section__title">Skills</h2>
+
+                <div class="skills__container container grid">
+
+                    <!--=============== SKILLS COLUMN 1 ===============-->
+                    <div class="skills__content">
+                        <h3 class="skills__title">Technical Proficiencies</h3>
+
+                        <div class="skills__box">
+                            <!--=============== SKILLS 1 ===============-->
+                            <div class="skills__group">
+                                <div class="skills__bar-data">
+                                    <div class="skills__bar">
+                                        <div class="skills__bar-progress" data-progress="95">
+                                            <span class="skills__progress-number">0%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="skills__name skill__details">CI/CD Tools</h3>
+
+                                    <div class="skills__modal">
+                                        <div class="skills__modal-content">
+                                            <i class="bx bx-x skills__modal-close"></i>
+            
+                                            <h3 class="skills__modal-title">CI/CD Tools (Jenkins, GitHub, Azure DevOps)</h3>
+                                            <p class="skills__modal-description">
+                                                Proficient in setting up, managing, and optimizing Continuous Integration and Continuous Delivery pipelines using tools like Jenkins, GitHub, and Azure DevOps to automate testing, build, and deployment processes. This expertise enables faster, more reliable software releases.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__bar-data">
+                                    <div class="skills__bar">
+                                        <div class="skills__bar-progress" data-progress="90">
+                                            <span class="skills__progress-number">0%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="skills__name skill__details">Java, Python, SQL</h3>
+
+                                    <div class="skills__modal">
+                                        <div class="skills__modal-content">
+                                            <i class="bx bx-x skills__modal-close"></i>
+            
+                                            <h3 class="skills__modal-title">Programming (Java, Python, SQL)</h3>
+                                            <p class="skills__modal-description">
+                                                Strong coding skills in Java and Python for automation and scripting. Expertise in SQL for database management and optimization, enabling efficient querying and manipulation of data across different platforms.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__bar-data">
+                                    <div class="skills__bar">
+                                        <div class="skills__bar-progress" data-progress="85">
+                                            <span class="skills__progress-number">0%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="skills__name skill__details">Selenium, Appium, TestNG</h3>
+
+                                    <div class="skills__modal">
+                                        <div class="skills__modal-content">
+                                            <i class="bx bx-x skills__modal-close"></i>
+            
+                                            <h3 class="skills__modal-title">Automation Testing (Selenium, Appium, TestNG)</h3>
+                                            <p class="skills__modal-description">
+                                                Skilled in using automation testing tools like Selenium, Appium, and TestNG to develop test scripts for web and mobile applications, ensuring high-quality and reliable software through end-to-end automated testing.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__bar-data">
+                                    <div class="skills__bar">
+                                        <div class="skills__bar-progress" data-progress="80">
+                                            <span class="skills__progress-number">0%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="skills__name skill__details">Ansible, Puppet</h3>
+
+                                    <div class="skills__modal">
+                                        <div class="skills__modal-content">
+                                            <i class="bx bx-x skills__modal-close"></i>
+            
+                                            <h3 class="skills__modal-title">Configuration Management (Ansible, Puppet)</h3>
+                                            <p class="skills__modal-description">
+                                                Knowledgeable in configuration management tools like Ansible and Puppet to automate system configurations, enhance environment consistency, and improve overall infrastructure management.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--=============== SKILLS 2 ===============-->
+                            <div class="skills__group">
+                                <div class="skills__bar-data">
+                                    <div class="skills__bar">
+                                        <div class="skills__bar-progress" data-progress="85">
+                                            <span class="skills__progress-number">0%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="skills__name skill__details">AWS, Microsoft Azure</h3>
+
+                                    <div class="skills__modal">
+                                        <div class="skills__modal-content">
+                                            <i class="bx bx-x skills__modal-close"></i>
+            
+                                            <h3 class="skills__modal-title">Cloud Platforms (AWS, Microsoft Azure)</h3>
+                                            <p class="skills__modal-description">
+                                                Experienced with cloud platforms such as AWS and Azure, deploying and managing cloud-based applications, services, and infrastructure, optimizing scalability, performance, and cost-efficiency.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__bar-data">
+                                    <div class="skills__bar">
+                                        <div class="skills__bar-progress" data-progress="80">
+                                            <span class="skills__progress-number">0%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="skills__name skill__details">Docker, OpenShift</h3>
+
+                                    <div class="skills__modal">
+                                        <div class="skills__modal-content">
+                                            <i class="bx bx-x skills__modal-close"></i>
+            
+                                            <h3 class="skills__modal-title">Containerization (Docker, OpenShift)</h3>
+                                            <p class="skills__modal-description">
+                                                Expertise in containerization technologies like Docker and OpenShift, enabling efficient application packaging, deployment, and scaling within isolated containers across various environments.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__bar-data">
+                                    <div class="skills__bar">
+                                        <div class="skills__bar-progress" data-progress="75">
+                                            <span class="skills__progress-number">0%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="skills__name skill__details">Nagios, Splunk</h3>
+
+                                    <div class="skills__modal">
+                                        <div class="skills__modal-content">
+                                            <i class="bx bx-x skills__modal-close"></i>
+            
+                                            <h3 class="skills__modal-title">Monitoring & Logging (Nagios, Splunk)</h3>
+                                            <p class="skills__modal-description">
+                                                Proficient in monitoring and logging tools like Nagios and Splunk to track system health, performance metrics, and log data, ensuring optimal application performance and prompt issue resolution.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__bar-data">
+                                    <div class="skills__bar">
+                                        <div class="skills__bar-progress" data-progress="90">
+                                            <span class="skills__progress-number">0%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="skills__name skill__details">JIRA, Confluence, Slack</h3>
+
+                                    <div class="skills__modal">
+                                        <div class="skills__modal-content">
+                                            <i class="bx bx-x skills__modal-close"></i>
+            
+                                            <h3 class="skills__modal-title">Collaboration Tools (JIRA, Confluence, Slack)</h3>
+                                            <p class="skills__modal-description">
+                                                Experienced with collaboration and project management tools such as JIRA, Confluence, and Slack, streamlining communication, task management, and team collaboration in fast-paced development environments.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--=============== SKILLS COLUMN 2 ===============-->
+                    <div class="skills__content">
+                        <h3 class="skills__title">Core Competencies</h3>
+
+                        <div class="skills__box">
+                            <!--=============== SKILLS 1 ===============-->
+                            <div class="skills__group">
+                                <div class="skills__bar-data">
+                                    <div class="skills__bar">
+                                        <div class="skills__bar-progress" data-progress="95">
+                                            <span class="skills__progress-number">0%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="skills__name skill__details">Change & Release</h3>
+
+                                    <div class="skills__modal">
+                                        <div class="skills__modal-content">
+                                            <i class="bx bx-x skills__modal-close"></i>
+            
+                                            <h3 class="skills__modal-title">Change & Release Oversight</h3>
+                                            <p class="skills__modal-description">
+                                                Expertise in managing the entire change and release management lifecycle, including planning, coordination, and execution of software releases. Ensures timely, high-quality product deployments while minimizing disruptions.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__bar-data">
+                                    <div class="skills__bar">
+                                        <div class="skills__bar-progress" data-progress="90">
+                                            <span class="skills__progress-number">0%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="skills__name skill__details">Agile and Scrum</h3>
+
+                                    <div class="skills__modal">
+                                        <div class="skills__modal-content">
+                                            <i class="bx bx-x skills__modal-close"></i>
+            
+                                            <h3 class="skills__modal-title">Agile and Scrum Proficiency</h3>
+                                            <p class="skills__modal-description">
+                                                In-depth knowledge of Agile methodologies and Scrum practices, leading teams through sprints, backlog grooming, and daily standups to deliver software iteratively and respond to evolving requirements efficiently.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__bar-data">
+                                    <div class="skills__bar">
+                                        <div class="skills__bar-progress" data-progress="85">
+                                            <span class="skills__progress-number">85%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="skills__name skill__details">Risk Identification</h3>
+
+                                    <div class="skills__modal">
+                                        <div class="skills__modal-content">
+                                            <i class="bx bx-x skills__modal-close"></i>
+            
+                                            <h3 class="skills__modal-title">Risk Assessment & Mitigation</h3>
+                                            <p class="skills__modal-description">
+                                                Skilled in identifying potential risks in release and change processes and implementing proactive risk mitigation strategies to ensure smooth, secure, and on-time delivery of software products.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--=============== SKILLS 2 ===============-->
+                            <div class="skills__group">
+                                <div class="skills__bar-data">
+                                    <div class="skills__bar">
+                                        <div class="skills__bar-progress" data-progress="90">
+                                            <span class="skills__progress-number">0%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="skills__name skill__details">Collaboration</h3>
+
+                                    <div class="skills__modal">
+                                        <div class="skills__modal-content">
+                                            <i class="bx bx-x skills__modal-close"></i>
+            
+                                            <h3 class="skills__modal-title">Collaborative Team Dynamics</h3>
+                                            <p class="skills__modal-description">
+                                                Excellent at fostering collaboration among cross-functional teams (development, QA, operations) to ensure smooth project execution, improve efficiency, and reduce errors during production releases.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__bar-data">
+                                    <div class="skills__bar">
+                                        <div class="skills__bar-progress" data-progress="85">
+                                            <span class="skills__progress-number">0%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="skills__name skill__details">Problem-Solving</h3>
+
+                                    <div class="skills__modal">
+                                        <div class="skills__modal-content">
+                                            <i class="bx bx-x skills__modal-close"></i>
+            
+                                            <h3 class="skills__modal-title">Problem-Solving</h3>
+                                            <p class="skills__modal-description">
+                                                Strong analytical skills for troubleshooting complex technical issues, identifying root causes, and implementing effective solutions quickly, ensuring minimal disruption to software delivery.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__bar-data">
+                                    <div class="skills__bar">
+                                        <div class="skills__bar-progress" data-progress="80">
+                                            <span class="skills__progress-number">0%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="skills__name skill__details">Leadership & Stakeholder</h3>
+
+                                    <div class="skills__modal">
+                                        <div class="skills__modal-content">
+                                            <i class="bx bx-x skills__modal-close"></i>
+            
+                                            <h3 class="skills__modal-title">Leadership & Stakeholder Coordination</h3>
+                                            <p class="skills__modal-description">
+                                                Experienced in leading teams, managing stakeholders, and coordinating activities across different departments to align technical processes with business goals and achieve successful project outcomes.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== QUALIFICATION ===============-->
+            <section class="section" id="qualification">
+                <span class="section__subtitle">My personal journey</span>
+                <h2 class="section__title">Qualification</h2>
+
+                <div class="qualification__container container grid">
+                    <!--=============== QUALIFICATION 01 ===============-->
+                    <div class="qualification__content">
+                        <h3 class="qualification__title">
+                            <i class='bx bxs-graduation' ></i>
+                            Education
+                        </h3>
+                        <div class="qualification__group">
+                            <div class="qualification__data">
+                                <h4 class="qualification__date">2021 – 2022 (Completed)</h4>
+                                <h3 class="qualification__name qualification__details">Bachelors of Commerce (B.COM)</h3>
+                                <span class="qualification__address">University of Karachi</span>
+
+                                <div class="qualification__modal">
+                                    <div class="qualification__modal-content">
+                                        <i class="bx bx-x qualification__modal-close"></i>
+        
+                                        <h4 class="qualification__date">2021 – 2022 (Completed)</h4>
+                                        <h3 class="qualification__modal-title">Bachelors of Commerce (B.COM)</h3>
+                                        <p class="qualification__modal-description">
+                                            Developed a strong foundation in analytical thinking, business strategy, and data interpretation.
+                                            This background in numbers and organization supports my approach to campaign planning,
+                                            budgeting, and partnership management — bringing structure and logic to every creative
+                                            process.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="qualification__data">
+                                <h4 class="qualification__date">2014 – 2018</h4>
+                                <h3 class="qualification__name qualification__details">Bachelor of Engineering in Computer Engineering</h3>
+                                <span class="qualification__address">Mumbai University, India</span>
+
+                                <div class="qualification__modal">
+                                    <div class="qualification__modal-content">
+                                        <i class="bx bx-x qualification__modal-close"></i>
+        
+                                        <h4 class="qualification__date">2014 – 2018</h4>
+                                        <h3 class="qualification__modal-title">Bachelor of Engineering in Computer Engineering</h3>
+                                        <p class="qualification__modal-description">
+                                            Gained foundational knowledge in computer engineering, covering software development, network systems, and database management. Undertook projects on automation systems and web application development, honing skills in Java and Python.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <!--=============== QUALIFICATION 02 ===============-->
+                    <div class="qualification__content">
+                        <h3 class="qualification__title">
+                            <i class="bx bx-briefcase-alt-2"></i>
+                            Work
+                        </h3>
+                        <div class="qualification__group">
+                            <div class="qualification__data">
+                                <h4 class="qualification__date">May 2025 - Present</h4>
+                                <h3 class="qualification__name qualification__details">Alvanta Talent — Influencer Talent Management Studio</h3>
+                                <span class="qualification__address">Founder & Creative Director</span>
+
+                                <div class="qualification__modal">
+                                    <div class="qualification__modal-content">
+                                        <i class="bx bx-x qualification__modal-close"></i>
+        
+                                        <h4 class="qualification__date">May 2025 - Present</h4>
+                                        <h3 class="qualification__modal-title">Alvanta Talent — Influencer Talent Management Studio</h3>
+                                        <p class="qualification__modal-description">
+                                            <ul>
+                                                <li>Lead end-to-end influencer talent marketing campaigns, connecting brands with both Pakistani and international creators for authentic, results-driven collaborations</li>
+                                                <li>Manage influencer scouting, onboarding, negotiations and relationship building, fostering trust and clear communication across teams and partners.</li>
+                                                <li>Collaborate with global influencers to execute culturally aligned campaigns for Pakistani brands, enhancing visibility and engagement across diverse markets.</li>
+                                                <li>Oversee creative direction and strategic planning, ensuring brand alignment and measurable campaign growth.</li>
+                                                <li>Provide leadership in remote coordination, guiding cross-functional teams and maintaining seamless project execution.</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qualification__data">
+                                <h4 class="qualification__date">June 2023 – April 2025</h4>
+                                <h3 class="qualification__name qualification__details">Enfluenso</h3>
+                                <span class="qualification__address">Creative & Brand Partnership Strategist</span>
+
+                                <div class="qualification__modal">
+                                    <div class="qualification__modal-content">
+                                        <i class="bx bx-x qualification__modal-close"></i>
+        
+                                        <h4 class="qualification__date">June 2023 – April 2025</h4>
+                                        <h3 class="qualification__modal-title">Enfluenso</h3>
+                                        <p class="qualification__modal-description">
+                                            <ul>
+                                                <li>Planned and managed influencer marketing campaigns to boost brand visibility and audience engagement.</li>
+                                                <li>Matched brands with relevant creators, ensuring alignment with campaign goals, values, and identity.</li>
+                                                <li>Tracked campaign performance and provided actionable insights through trend analysis and audience feedback to optimize future strategies.</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qualification__data">
+                                <h4 class="qualification__date">Aug 2022 – May 2023</h4>
+                                <h3 class="qualification__name qualification__details">The Smart School</h3>
+                                <span class="qualification__address">Academic Coordinator</span>
+
+                                <div class="qualification__modal">
+                                    <div class="qualification__modal-content">
+                                        <i class="bx bx-x qualification__modal-close"></i>
+        
+                                        <h4 class="qualification__date">Aug 2022 – May 2023</h4>
+                                        <h3 class="qualification__modal-title">The Smart School</h3>
+                                        <p class="qualification__modal-description">
+                                            <ul>
+                                                <li>Oversaw curriculum planning and daily operations, ensuring timely task execution, documentation accuracy, and smooth coordination between staff and management.</li>
+                                                <li>Managed teacher supervision and performance tracking, providing structured feedback and maintaining organized academic records and schedules.</li>
+                                                <li>Served as a central communication bridge between students, teachers, parents, and leadership, resolving queries efficiently and fostering a productive, well-organized academic environment.</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qualification__data">
+                                <h4 class="qualification__date">Nov 2021 – Aug 2022</h4>
+                                <h3 class="qualification__name qualification__details">Mathematics Teacher for Class V-VIII</h3>
+                                <span class="qualification__address">Academic Coordinator</span>
+
+                                <div class="qualification__modal">
+                                    <div class="qualification__modal-content">
+                                        <i class="bx bx-x qualification__modal-close"></i>
+        
+                                        <h4 class="qualification__date">Nov 2021 – Aug 2022</h4>
+                                        <h3 class="qualification__modal-title">Mathematics Teacher for Class V-VIII</h3>
+                                        <p class="qualification__modal-description">
+                                            <ul>
+                                                <li>Taught Oxford Edition 2 curriculum, strengthening students’ analytical and problem-solving skills through engaging, concept-based learning and consistent academic support.</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="qualification__data">
+                                <h4 class="qualification__date">July 2018 – July 2019</h4>
+                                <h3 class="qualification__name qualification__details">Quality Analyst (Automation)</h3>
+                                <span class="qualification__address">Trendsutra Platform Services Pvt Ltd, India</span>
+
+                                <div class="qualification__modal">
+                                    <div class="qualification__modal-content">
+                                        <i class="bx bx-x qualification__modal-close"></i>
+        
+                                        <h4 class="qualification__date">July 2018 – July 2019</h4>
+                                        <h3 class="qualification__modal-title">Quality Analyst (Automation)</h3>
+                                        <p class="qualification__modal-description">
+                                            Developed test automation frameworks to improve project efficiency and accuracy. Conducted end-to-end regression testing for websites and mobile apps using Selenium and Jira. Automated 80% of CRM testing processes, boosting QA productivity by 70%. Recognized with internal awards for significant contributions to team success.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="download--resume-box text--center" style="display: none;">
+                    <a href="CV/SejalJawale_CV.pdf" target="_blank" class="button button--flex">
+                        View full CV<i class="bx bxs-file-doc button__icon"></i>
+                    </a>
+                </div>
+            </section>
+
+            <!--=============== RECENT CERTIFICATE ===============-->
+            <!-- <section class="section" id="recent-certificate">
+                <span class="section__subtitle">Most recent certifcations</span>
+                <h2 class="section__title">Recent Certifications</h2>
+
+                <div class="portfolio__container container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="certificates/certificate-1.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h4 class="portfolio__date">2023</h4>
+                                <h3 class="portfolio__title">ITIL® Foundation Certificate in IT Service Management</h3>
+                                <span class="portfolio__from">ITIL® Foundation</span>
+                                <a href="#" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Verify
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="bx bx-chevron-right swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="bx bx-chevron-left swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section> -->
+
+            <!--=============== CERTIFICATE ===============-->
+            <!-- <section class="section" id="certificate">
+                <span class="section__subtitle">My Achievements</span>
+                <h2 class="section__title">Licenses & Certifications</h2>
+
+                <div class="certificate__container container grid">
+                    <div class="certification__container container grid">
+                        <div class="certification__card">
+                            <div class="certification__img-box">
+                                <img src="certificates/certificate-1.png" alt="" class="certificate__img">
+                            </div>
+    
+                            <div class="certification__data">
+                                <h3 class="certification__date">2024</h3>
+                                <h1 class="certification__title">Google Advanced Data Analytics Professional Certification</h1>
+                                <span class="certification__subtitle">Google - Coursera</span>
+                                <a href="#" target="_blank" class="button button--flex button--link">Verify</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </section> -->
+
+            <!--=============== SERVICES ===============-->
+            <section class="services section">
+                <h2 class="section__title" style="margin-bottom: .7rem;">Engagement Pillars</h2>
+                <span class="section__subtitle font-weight-extra-bold">Core Strategic Expertise</span>
+
+                <div class="services__container container grid">
+                    <div class="services__card">
+                        <h3 class="services__title">Strategy & Planning</h3>
+
+                        <span class="services__button">
+                            See Details <i class="bx bx-right-arrow-alt services__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="bx bx-x services__modal-close"></i>
+
+                                <h3 class="services__modal-title">Strategy & Planning</h3>
+                                <p class="services__modal-description">
+                                    Develop influencer
+                                    marketing strategies aligned with brand goals
+                                    and target audiences. Identify collaboration
+                                    opportunities, including brand partnerships,
+                                    sponsorships, and campaigns, while
+                                    researching industry trends, competitor
+                                    activity, and emerging social platforms to
+                                    guide campaign planning.
+                                </p>
+
+                                <!-- <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class="bx bx-check services__modal-icon"></i>
+                                        <p class="services__modal-info">I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class="bx bx-check services__modal-icon"></i>
+                                        <p class="services__modal-info">Web page development.</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class="bx bx-check services__modal-icon"></i>
+                                        <p class="services__modal-info">I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class="bx bx-check services__modal-icon"></i>
+                                        <p class="services__modal-info">I position your company brand.</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class="bx bx-check services__modal-icon"></i>
+                                        <p class="services__modal-info">Design and mockups of products for companies.</p>
+                                    </li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">Influencer Management</h3>
+
+                        <span class="services__button">
+                            See Details <i class="bx bx-right-arrow-alt services__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="bx bx-x services__modal-close"></i>
+
+                                <h3 class="services__modal-title">Influencer Management</h3>
+                                <p class="services__modal-description">
+                                    Scout and
+                                    onboard influencers that align with brand
+                                    voice and audience. Build strong professional
+                                    relationships, handle negotiations, contracts,
+                                    deliverables, and timelines, ensuring
+                                    influencers clearly understand campaign
+                                    objectives and creative guidelines. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">Brand Partnerships</h3>
+
+                        <span class="services__button">
+                            See Details <i class="bx bx-right-arrow-alt services__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="bx bx-x services__modal-close"></i>
+
+                                <h3 class="services__modal-title">Brand Partnerships</h3>
+                                <p class="services__modal-description">
+                                    Identify and approach
+                                    potential brand partners for collaborations
+                                    and co-marketing opportunities. Negotiate
+                                    agreements and maintain long-term
+                                    relationships to encourage recurring
+                                    collaborations, aligning influencer campaigns
+                                    with brand messaging.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">Social Media Management</h3>
+
+                        <span class="services__button">
+                            See Details <i class="bx bx-right-arrow-alt services__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="bx bx-x services__modal-close"></i>
+
+                                <h3 class="services__modal-title">Social Media Management</h3>
+                                <p class="services__modal-description">
+                                    Develop and
+                                    execute strategies to enhance campaigns and
+                                    overall brand presence. Manage content
+                                    calendars, schedule posts, monitor
+                                    engagement, and collaborate with influencers
+                                    and internal teams to maintain cohesive
+                                    messaging and aesthetics. Track performance
+                                    metrics to optimize reach and engagement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">Content & Creative Collaboration</h3>
+
+                        <span class="services__button">
+                            See Details <i class="bx bx-right-arrow-alt services__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="bx bx-x services__modal-close"></i>
+
+                                <h3 class="services__modal-title">Content & Creative Collaboration</h3>
+                                <p class="services__modal-description">
+                                    Work with creative, social media, and PR teams to
+                                    develop campaign concepts and suggest
+                                    content ideas that resonate with audiences.
+                                    Ensure all influencer content reflects the
+                                    brand’s messaging, tone, and visual identity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">Adaptability & Versatility</h3>
+
+                        <span class="services__button">
+                            See Details <i class="bx bx-right-arrow-alt services__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="bx bx-x services__modal-close"></i>
+
+                                <h3 class="services__modal-title">Adaptability & Versatility</h3>
+                                <p class="services__modal-description">
+                                    Thrive in
+                                    dynamic, fast-paced environments, quickly
+                                    adjusting strategies and processes to meet
+                                    evolving campaign needs while maintaining
+                                    strong communication and execution
+                                    standards.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="section__subtitle font-weight-extra-bold" style="margin-top: 3rem;">Alvanta's Service Framework</span>
+                <div class="services__container container grid">
+                    <div class="services__card">
+                        <h3 class="services__title">Global Talent Sourcing</h3>
+
+                        <span class="services__button">
+                            See Details <i class="bx bx-right-arrow-alt services__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="bx bx-x services__modal-close"></i>
+
+                                <h3 class="services__modal-title">Global Talent Sourcing</h3>
+                                <p class="services__modal-description">
+                                    Access to a vetted
+                                    network of high-quality Talent (including
+                                    influencers, celebrities, UGC creators) —
+                                    primarily in Pakistan, with extended reach
+                                    across the US, UK, and UAE. We find partners
+                                    who truly fit your brand's community.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">Partnership & Rate Negotiation</h3>
+
+                        <span class="services__button">
+                            See Details <i class="bx bx-right-arrow-alt services__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="bx bx-x services__modal-close"></i>
+
+                                <h3 class="services__modal-title">Partnership & Rate Negotiation</h3>
+                                <p class="services__modal-description">
+                                    Expertly
+                                    manage all negotiations, securing the best
+                                    possible rates and handling all payment
+                                    processing. This ensures fair value and a
+                                    smooth financial experience for your team.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">End-to-End Campaign Management</h3>
+
+                        <span class="services__button">
+                            See Details <i class="bx bx-right-arrow-alt services__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="bx bx-x services__modal-close"></i>
+
+                                <h3 class="services__modal-title">End-to-End Campaign Management</h3>
+                                <p class="services__modal-description">
+                                    Manage every single step: from influencer
+                                    proposal generation and communication to
+                                    content revisions, reshoots, and on-time
+                                    posting.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">Creative Strategy & Oversight</h3>
+
+                        <span class="services__button">
+                            See Details <i class="bx bx-right-arrow-alt services__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="bx bx-x services__modal-close"></i>
+
+                                <h3 class="services__modal-title">Creative Strategy & Oversight</h3>
+                                <p class="services__modal-description">
+                                    Design clear,
+                                    detailed creative briefs and content
+                                    guidelines, ensure content aligns perfectly
+                                    with your brand’s vision and delivers
+                                    measurable results.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">Conflict Resolution & Support</h3>
+
+                        <span class="services__button">
+                            See Details <i class="bx bx-right-arrow-alt services__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="bx bx-x services__modal-close"></i>
+
+                                <h3 class="services__modal-title">Conflict Resolution & Support</h3>
+                                <p class="services__modal-description">
+                                    Proactively
+                                    manage issues or conflicts that arise,
+                                    maintaining professionalism and transparency
+                                    to protect both brand and influencer
+                                    integrity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">Transparent Communication & Coordination</h3>
+
+                        <span class="services__button">
+                            See Details <i class="bx bx-right-arrow-alt services__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="bx bx-x services__modal-close"></i>
+
+                                <h3 class="services__modal-title">Transparent Communication & Coordination</h3>
+                                <p class="services__modal-description">
+                                    Maintain clear, consistent
+                                    communication throughout the campaign
+                                    lifecycle. Every update, change, and approval
+                                    is tracked and shared — so you always know
+                                    exactly where your campaign stands.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+
+            <!--=============== WORK ===============-->
+            <!-- <section class="work section" id="work">
+                <span class="section__subtitle">My Portfolio</span>
+                <h2 class="section__title">Recent Works</h2>
+
+                <div class="work__filters">
+                    <span class="work__item active-work" data-filter="all">All</span>
+                    <span class="work__item" data-filter=".web">Web</span>
+                    <span class="work__item" data-filter=".movil">Movil</span>
+                    <span class="work__item" data-filter=".design">Design</span>
+                </div>
+
+                <div class="work__container container grid">
+                    <div class="work__card mix web">
+                        <img src="assets/img/work1.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">Web design</h3>
+
+                        <a href="#" class="work__button">
+                            Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a>
+                    </div>
+                    <div class="work__card mix movil">
+                        <img src="assets/img/work2.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">App movil</h3>
+
+                        <a href="#" class="work__button">
+                            Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a>
+                    </div>
+                    <div class="work__card mix design">
+                        <img src="assets/img/work3.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">Brand design</h3>
+
+                        <a href="#" class="work__button">
+                            Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a>
+                    </div>
+                    <div class="work__card mix design">
+                        <img src="assets/img/work4.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">Web design</h3>
+
+                        <a href="#" class="work__button">
+                            Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a>
+                    </div>
+                    <div class="work__card mix movil">
+                        <img src="assets/img/work5.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">App movil</h3>
+
+                        <a href="#" class="work__button">
+                            Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section> -->
+
+            <!--=============== TESTIMONIALS ===============-->
+            <section class="testimonial section">
+                <span class="section__subtitle">My clients say</span>
+                <h2 class="section__title">Testimonial</h2>
+
+                <div class="testimonial__container container swiper">
+                    <div class="swiper-wrapper testimonial-wrapper">
+                        <!-- <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
+
+                            <h3 class="testimonial__name">Jhon Doe</h3>
+                            <p class="testimonial__description">
+                                A really good job, all aspects of the project were 
+                                followed step by step and with good results.
+                            </p>
+                        </div>
+                        <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
+
+                            <h3 class="testimonial__name">Paula Vusy</h3>
+                            <p class="testimonial__description">
+                                A really good job, all aspects of the project were 
+                                followed step by step and with good results.
+                            </p>
+                        </div>
+                        <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+
+                            <h3 class="testimonial__name">Sara Cill</h3>
+                            <p class="testimonial__description">
+                                A really good job, all aspects of the project were 
+                                followed step by step and with good results.
+                            </p>
+                        </div> -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--=============== BRANDS ===============-->
+            <section class="brand section">
+                <span class="section__subtitle">Who i work with</span>
+                <h2 class="section__title">Brands</h2>
+
+                <div class="brand__container container swiper">
+                    <div class="swiper-wrapper brand-wrapper">
+                        <!-- <div class="brand__card swiper-slide">
+                            <a href="">
+                                <img src="assets/img/brands/brand_01.png" alt="" class="brand__img">
+                            </a>
+                        </div>
+                        <div class="brand__card swiper-slide">
+                            <a href="">
+                                <img src="assets/img/brands/brand_02.png" alt="" class="brand__img">
+                            </a>
+                        </div>
+                        <div class="brand__card swiper-slide">
+                            <a href="">
+                                <img src="assets/img/brands/brand_03.png" alt="" class="brand__img">
+                            </a>
+                        </div>
+                        <div class="brand__card swiper-slide">
+                            <a href="">
+                                <img src="assets/img/brands/brand_04.png" alt="" class="brand__img">
+                            </a>
+                        </div> -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--=============== PROJECT / DELIVER WORK ===============-->
+            <section class="section" id="project">
+                <span class="section__subtitle">My deliver projects</span>
+                <h2 class="section__title">Projects</h2>
+
+                <div class="project__container container swiper">
+                    <div class="swiper-wrapper project-wrapper">
+                        <div class="project__card swiper-slide">
+                            <img src="assets/img/projects/project-3.jpg" alt="" class="project__img">
+    
+                            <div class="project__overlay">
+                                <div>
+                                    <h3>Paula Vusy</h3>
+                                    <p>
+                                        A really good job, all aspects of the project were 
+                                        followed step by step and with good results.
+                                    </p>
+                                </div>
+                                <div class="project__overlay-footer">
+                                    <span class="project__tag">Photography</span>
+                                    <a href="#!" target="_blank">
+                                        <i class="bx bx-chevron-right"></i> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__card swiper-slide">
+                            <img src="assets/img/projects/project-1.jpg" alt="" class="project__img">
+    
+                            <div class="project__overlay">
+                                <div>
+                                    <h3>Paula Vusy</h3>
+                                    <p>
+                                        A really good job, all aspects of the project were 
+                                        followed step by step and with good results.
+                                    </p>
+                                </div>
+                                <div class="project__overlay-footer">
+                                    <span class="project__tag">Photography</span>
+                                    <a href="#!" target="_blank">
+                                        <i class="bx bx-chevron-right"></i> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__card swiper-slide">
+                            <img src="assets/img/projects/project-2.jpg" alt="" class="project__img">
+    
+                            <div class="project__overlay">
+                                <div>
+                                    <h3>Paula Vusy</h3>
+                                    <p>
+                                        A really good job, all aspects of the project were 
+                                        followed step by step and with good results.
+                                    </p>
+                                </div>
+                                <div class="project__overlay-footer">
+                                    <span class="project__tag">Photography</span>
+                                    <a href="#!" target="_blank">
+                                        <i class="bx bx-chevron-right"></i> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__card swiper-slide">
+                            <img src="assets/img/projects/project-3.jpg" alt="" class="project__img">
+    
+                            <div class="project__overlay">
+                                <div>
+                                    <h3>Paula Vusy</h3>
+                                    <p>
+                                        A really good job, all aspects of the project were 
+                                        followed step by step and with good results.
+                                    </p>
+                                </div>
+                                <div class="project__overlay-footer">
+                                    <span class="project__tag">Photography</span>
+                                    <a href="#!" target="_blank">
+                                        <i class="bx bx-chevron-right"></i> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev project-swiper-btn">
+                        <i class="bx bx-chevron-left"></i>
+                    </div>
+                    <div class="swiper-button-next project-swiper-btn">
+                        <i class="bx bx-chevron-right"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== BLOG / POST ===============-->
+            <section class="section" id="blog">
+                <span class="section__subtitle">My articles</span>
+                <h2 class="section__title">Blogs</h2>
+
+                <div class="blog__container container grid">
+                    <!-- <div class="blog__card">
+                        <div class="blog__card-header">
+                          <img src="" alt="" />
+                        </div>
+                        <div class="blog__card-body">
+                          <span class="blog__tag">Technology</span>
+                          <h4>Why is the Tesla Cybertruck designed the way it is?</h4>
+                          <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+                            tenetur distinctio neque?
+                          </p>
+                          <div class="blog__user">
+                            <img src="assets/img/user-image.png" alt="Sejal Jawale" />
+                            <div class="blog__user-info">
+                              <h5>Jerome Walton</h5>
+                              <small>2h ago</small>
+                            </div>
+                          </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+            
+            <!--=============== CONTACT ===============-->
+            <section class="contact section" id="contact">
+                <span class="section__subtitle">Get in touch</span>
+                <h2 class="section__title">Contact Me</h2>
+
+                <div class="contact__container container grid">
+                    <div class="contact__content">
+                        <h3 class="contact__title">Talk to me</h3>
+
+                        <div class="contact__info">
+                            <div class="contact__card">
+                                <i class="bx bx-mail-send contact__card-icon"></i>
+                                <h3 class="contact__card-title">Email</h3>
+                                <span class="contact__card-data authorEmail">abc@gmail.com</span>
+
+                                <a href="mailto:" target="_blank" class="contact__button authorEmailLink">
+                                    Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+                            </div>
+                            <div class="contact__card">
+                                <i class="bx bx-phone contact__card-icon"></i>
+                                <h3 class="contact__card-title">Phone</h3>
+                                <span class="contact__card-data authorPhone">999-888-777</span>
+
+                                <a href="tel:" target="_blank" class="contact__button authorPhoneLink">
+                                    Call me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+                            </div>
+                            <div class="contact__card">
+                                <i class="bx bx-current-location contact__card-icon"></i>
+                                <h3 class="contact__card-title">Address</h3>
+                                <span class="contact__card-data authorAddress">Newcastle Upon Tyne, England, United Kingdom</span>
+
+                                <a href="" target="_blank" class="contact__button authorAddressLink">
+                                    Locate me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <h3 class="contact__title">Write me your queries</h3>
+
+                        <form action="" class="contact__form" id="contact-form">
+                            <input type="hidden" name="access_key" id="web3FormKey" value="">
+                            <div class="contact__form-div">
+                                <label for="name" class="contact__form-tag">Name</label>
+                                <input type="text" name="name" id="name" placeholder="Enter your name" class="contact__form-input">
+                            </div>
+                            <div class="contact__form-div">
+                                <label for="email" class="contact__form-tag">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email" class="contact__form-input">
+                            </div>
+                            <div class="contact__form-div">
+                                <label for="phone" class="contact__form-tag">Phone</label>
+                                <input type="number" name="phone" id="phone" placeholder="Enter your phone no." class="contact__form-input">
+                            </div>
+                            <div class="contact__form-div contact__form-area">
+                                <label for="message" class="contact__form-tag">Message</label>
+                                <textarea name="message" id="message" rows="6" placeholder="Write your message" class="contact__form-input"></textarea>
+                            </div>
+
+                            <button type="submit" class="button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title siteName">Alina Collen.</h1>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#blog" class="footer__link">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__social">
+                    <a href="https://www.linkedin.com/in/sejaljawale/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin' ></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social-link authorEmailLink">
+                        <i class='bx bxl-gmail' ></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy" id="footer-copy">&#169; Alina Collen. All rigths reserved</span>
+            </div>
+        </footer>
+
+        <!--=================== CONTENTFUL JS ====================-->
+        <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="assets/js/mixitup.min.js"></script>
+
+        <!--=============== AUTOTYPE ===============-->
+        <script src="assets/js/auto-type.min.js"></script>
+
+        <!--==================== JQUERY JS ====================-->
+        <script src="assets/js/jquery.min.js"></script>
+
+        <!--==================== TOASTR JS ====================-->
+        <script src="assets/js/toastr.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
