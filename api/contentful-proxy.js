@@ -52,6 +52,17 @@ export default async function handler(req, res) {
       if (imageLink?.sys?.id && assetMap[imageLink.sys.id]) {
         item.fields.image = assetMap[imageLink.sys.id];
       }
+      
+      const avatarLink = item.fields?.avatar;
+      if (avatarLink?.sys?.id && assetMap[avatarLink.sys.id]) {
+        item.fields.avatar = assetMap[avatarLink.sys.id];
+      }
+      
+      const thumbnailLink = item.fields?.thumbnail;
+      if (thumbnailLink?.sys?.id && assetMap[thumbnailLink.sys.id]) {
+        item.fields.avatar = assetMap[thumbnailLink.sys.id];
+      }
+
       return item;
     });
 
