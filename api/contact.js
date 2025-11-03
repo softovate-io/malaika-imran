@@ -4,7 +4,12 @@ export default async function handler(req, res) {
   }
 
   try {
-    const body = JSON.parse(req.body);
+    const body = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
+
+    if (!process.env.WEB3FORM_KEY) {
+      console.error("WEB3FORM_KEY is missing from environment variables");
+      return res.status(500).json({ message: "Missing API key" });
+    }
 
     const payload = {
       ...body,
@@ -21,9 +26,15 @@ export default async function handler(req, res) {
     });
 
     const data = await response.json();
-    res.status(response.status).json(data);
+
+    if (!response.ok) {
+      console.error("Web3Forms error:", data);
+      return res.status(response.status).json(data);
+    }
+
+    res.status(200).json(data);
   } catch (error) {
-    console.error("Error sending to Web3Forms:", error);
+    console.error("Internal error:", error);
     res.status(500).json({ message: "Internal server error" });
   }
 }
