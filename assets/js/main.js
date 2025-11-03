@@ -742,7 +742,7 @@ function renderProjcts(projects) {
 
     const slide = `
       <div class="project__card swiper-slide">
-        <img src="${image}" alt="${title}" class="project__img">
+        <img src="https:${image}" alt="${title}" class="project__img">
 
         <div class="project__overlay">
             <div>
