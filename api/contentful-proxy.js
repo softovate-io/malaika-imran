@@ -60,7 +60,7 @@ export default async function handler(req, res) {
       
       const thumbnailLink = item.fields?.thumbnail;
       if (thumbnailLink?.sys?.id && assetMap[thumbnailLink.sys.id]) {
-        item.fields.avatar = assetMap[thumbnailLink.sys.id];
+        item.fields.thumbnail = assetMap[thumbnailLink.sys.id];
       }
 
       return item;
