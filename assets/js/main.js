@@ -396,7 +396,8 @@ function populateJsonToMarkup() {
 
       // Populate config keys
       const web3FormAccessKey = document.getElementById('web3FormKey');
-      web3FormAccessKey.value = data.configKeys.web3form_access_key;
+      // web3FormAccessKey.value = data.configKeys.web3form_access_key;
+      web3FormAccessKey.value = window.ENV.WEB3FORM_KEY;
 
       // Populate meta tags
       const metaAuthor = document.querySelector('meta[name="author"]');
@@ -603,7 +604,7 @@ form.addEventListener('submit', function (e) {
 function createContentfulClient(spaceId) {
   return contentful.createClient({
     space: spaceId,
-    accessToken: 'JQ6saPTN6bBTXL9fBwBjeMbMyfJNpbPswp4gMsMcJ20'
+    accessToken: window.ENV.CONTENTFUL_ACCESS_TOKEN
   });
 }
 
@@ -620,7 +621,7 @@ async function fetchContentfulData({ spaceId, contentType }) {
 
 (async function initBrands() {
   const brands = await fetchContentfulData({
-    spaceId: 'n98z6fh3dhk5',
+    spaceId: window.ENV.CONTENTFUL_SPACE_ID,
     contentType: 'brand'
   });
   renderBrands(brands);
@@ -628,7 +629,7 @@ async function fetchContentfulData({ spaceId, contentType }) {
 
 (async function initTestimonials() {
   const testimonials = await fetchContentfulData({
-    spaceId: 'n98z6fh3dhk5',
+    spaceId: window.ENV.CONTENTFUL_SPACE_ID,
     contentType: 'testimonial'
   });
   renderTestimonials(testimonials);
@@ -636,7 +637,7 @@ async function fetchContentfulData({ spaceId, contentType }) {
 
 (async function initBlogs() {
   const blogs = await fetchContentfulData({
-    spaceId: 'n98z6fh3dhk5',
+    spaceId: window.ENV.CONTENTFUL_SPACE_ID,
     contentType: 'blog'
   });
   renderBlogs(blogs);
@@ -644,7 +645,7 @@ async function fetchContentfulData({ spaceId, contentType }) {
 
 (async function initProjects() {
   const projects = await fetchContentfulData({
-    spaceId: 'n98z6fh3dhk5',
+    spaceId: window.ENV.CONTENTFUL_SPACE_ID,
     contentType: 'projects'
   });
   renderProjcts(projects);
