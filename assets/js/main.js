@@ -395,9 +395,9 @@ function populateJsonToMarkup() {
       footerCopy.textContent = data.siteGeneral.copyright;
 
       // Populate config keys
-      const web3FormAccessKey = document.getElementById('web3FormKey');
+      // const web3FormAccessKey = document.getElementById('web3FormKey');
       // web3FormAccessKey.value = data.configKeys.web3form_access_key;
-      web3FormAccessKey.value = window.ENV.WEB3FORM_KEY;
+      // web3FormAccessKey.value = window.ENV.WEB3FORM_KEY;
 
       // Populate meta tags
       const metaAuthor = document.querySelector('meta[name="author"]');
@@ -555,12 +555,57 @@ function validateForm() {
   return isValid;
 }
 
+// form.addEventListener('submit', function (e) {
+//   e.preventDefault();
+
+//   if (!validateForm()) {
+//       toastr.error("Please fill in all required fields.");
+//       return;
+//   }
+
+//   const initialButtonHTML = submitButton.innerHTML;
+//   submitButton.innerHTML = "Sending...";
+//   submitButton.disabled = true;
+
+//   const formData = new FormData(form);
+//   const object = Object.fromEntries(formData);
+//   const json = JSON.stringify(object);
+  
+//   fetch('https://api.web3forms.com/submit', {
+//       method: 'POST',
+//       headers: {
+//           'Content-Type': 'application/json',
+//           'Accept': 'application/json'
+//       },
+//       body: json
+//   })
+//       .then(async (response) => {
+//           let json = await response.json();
+//           if (response.status === 200) {
+//               toastr.success("Your message has been submitted successfully", "Successfully!");
+//           } else {
+//               console.log(response);
+//               toastr.error(json.message || "Submission failed.");
+//           }
+//       })
+//       .catch(error => {
+//           console.log(error);
+//           toastr.error("Something went wrong!");
+//       })
+//       .finally(() => {
+//           submitButton.innerHTML = initialButtonHTML;
+//           submitButton.disabled = false;
+
+//           form.reset();
+//       });
+// });
+
 form.addEventListener('submit', function (e) {
   e.preventDefault();
 
   if (!validateForm()) {
-      toastr.error("Please fill in all required fields.");
-      return;
+    toastr.error("Please fill in all required fields.");
+    return;
   }
 
   const initialButtonHTML = submitButton.innerHTML;
@@ -570,51 +615,58 @@ form.addEventListener('submit', function (e) {
   const formData = new FormData(form);
   const object = Object.fromEntries(formData);
   const json = JSON.stringify(object);
-  
-  fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-      },
-      body: json
-  })
-      .then(async (response) => {
-          let json = await response.json();
-          if (response.status === 200) {
-              toastr.success("Your message has been submitted successfully", "Successfully!");
-          } else {
-              console.log(response);
-              toastr.error(json.message || "Submission failed.");
-          }
-      })
-      .catch(error => {
-          console.log(error);
-          toastr.error("Something went wrong!");
-      })
-      .finally(() => {
-          submitButton.innerHTML = initialButtonHTML;
-          submitButton.disabled = false;
 
-          form.reset();
-      });
+  fetch('/api/contact', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: json,
+  })
+    .then(async (response) => {
+      const json = await response.json();
+      if (response.ok) {
+        toastr.success("Your message has been submitted successfully", "Successfully!");
+      } else {
+        toastr.error(json.message || "Submission failed.");
+      }
+    })
+    .catch(error => {
+      console.error(error);
+      toastr.error("Something went wrong!");
+    })
+    .finally(() => {
+      submitButton.innerHTML = initialButtonHTML;
+      submitButton.disabled = false;
+      form.reset();
+    });
 });
 
 // CONTENTFUL
-function createContentfulClient(spaceId) {
-  return contentful.createClient({
-    space: spaceId,
-    accessToken: window.ENV.CONTENTFUL_ACCESS_TOKEN
-  });
-}
+// function createContentfulClient(spaceId) {
+//   return contentful.createClient({
+//     space: spaceId,
+//     accessToken: window.ENV.CONTENTFUL_ACCESS_TOKEN
+//   });
+// }
+
+// async function fetchContentfulData({ spaceId, contentType }) {
+//   try {
+//     const client = createContentfulClient(spaceId);
+//     const entries = await client.getEntries({ content_type: contentType });
+//     return entries.items || [];
+//   } catch (error) {
+//     console.error("Error fetching data from Contentful:", error);
+//     return [];
+//   }
+// }
 
 async function fetchContentfulData({ spaceId, contentType }) {
   try {
-    const client = createContentfulClient(spaceId);
-    const entries = await client.getEntries({ content_type: contentType });
-    return entries.items || [];
+    const res = await fetch(`/api/contentful-proxy?spaceId=${spaceId}&contentType=${contentType}`);
+    const data = await res.json();
+
+    return data.items || [];
   } catch (error) {
-    console.error("Error fetching data from Contentful:", error);
+    console.error("Error fetching data from Contentful proxy:", error);
     return [];
   }
 }
