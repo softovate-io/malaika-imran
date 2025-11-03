@@ -703,20 +703,51 @@ async function fetchContentfulData({ spaceId, contentType }) {
   renderProjcts(projects);
 })();
 
+// function renderBrands(brands) {
+//   const $wrapper = $(".brand-wrapper");
+//   if ($wrapper.length === 0) return;
+//   $wrapper.empty();
+
+//   $.each(brands, function (index, item) {
+//     const title = item.fields.title || "";
+//     const url = item.fields.url || "#";
+//     const image = item.fields.image?.fields?.file?.url || "";
+
+//     const slide = `
+//       <div class="brand__card swiper-slide">
+//         <a href="${url}" target="_blank" title="${title}">
+//           <img src="https:${image}" alt="${title}" class="brand__img">
+//           <span class="brand__title">${title}</span>
+//         </a>
+//       </div>
+//     `;
+
+//     $wrapper.append(slide);
+//   });
+
+//   swiperBrands();
+// }
+
 function renderBrands(brands) {
   const $wrapper = $(".brand-wrapper");
   if ($wrapper.length === 0) return;
   $wrapper.empty();
 
   $.each(brands, function (index, item) {
-    const title = item.fields.title || "";
-    const url = item.fields.url || "#";
-    const image = item.fields.image?.fields?.file?.url || "";
+    const title = item?.fields?.title || "";
+    const url = item?.fields?.url || "#";
+
+    let imageUrl = "";
+    if (item?.fields?.image?.fields?.file?.url) {
+      imageUrl = item.fields.image.fields.file.url.startsWith("http")
+        ? item.fields.image.fields.file.url
+        : `https:${item.fields.image.fields.file.url}`;
+    }
 
     const slide = `
       <div class="brand__card swiper-slide">
         <a href="${url}" target="_blank" title="${title}">
-          <img src="https:${image}" alt="${title}" class="brand__img">
+          <img src="${imageUrl}" alt="${title}" class="brand__img">
           <span class="brand__title">${title}</span>
         </a>
       </div>
